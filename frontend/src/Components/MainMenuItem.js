@@ -2,10 +2,12 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export default function MainMenuItem({menuSpec}) {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
+    console.log(anchorEl)
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -25,7 +27,9 @@ export default function MainMenuItem({menuSpec}) {
                 onClick={handleClick}
             >
                 {menuSpec.menuName}
+                <KeyboardArrowDownIcon fontSize={"medium"}/>
             </Button>
+
             <Menu
                 id="basic-menu"
                 anchorEl={anchorEl}
