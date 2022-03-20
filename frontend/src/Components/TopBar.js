@@ -8,7 +8,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 import MenuIcon from '@mui/icons-material/Menu';
-import BuildCircleRoundedIcon from '@mui/icons-material/BuildCircleRounded';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 import {useState} from "react";
 
@@ -113,7 +113,7 @@ export const TopBar = () => {
                             John Dou
                         <Tooltip title="Open settings">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 2 }}>
-                                <BuildCircleRoundedIcon fontSize={"large"} sx={{color: 'white'}}/>
+                                <SettingsIcon fontSize={"large"} sx={{color: 'white'}}/>
                             </IconButton>
                         </Tooltip>
                         </Typography>
